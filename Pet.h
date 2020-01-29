@@ -3,7 +3,7 @@ using namespace std;
 
 class Pet
 {
-  public:
+  public: //can be used by anyone (in main)
     //pet types
     Pet();
     Pet(string name, int age, string type, double weight);
@@ -17,7 +17,7 @@ class Pet
     int getAge();
     string getType();
     double getWeight();
-  private:
+  private: //only usable by the class itself
     //pet variables
     string m_name;
     int m_age;
